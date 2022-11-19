@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exchange rates</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+  <div class="textField" >
+    <h1>This website contains the 2022 year to date ECB data on exchange rates compared to EUR</h1>
+    <h3>The below link leads you to the source file where the data originate from.</h3>
+    
+    <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html", target="_blank">ECB website</a>
+    <h3>Please note, that not all data have been imported from the official CSV file.</h3>
+  </div>
+
+  <div class="buttons"> If you would like to see a currency's data this year, please hit 'Yes', otherwise 'No'
+    <button id="Yes">Yes</button>
+    <button id="No">No</button>
+  </div>
+
+  <canvas id="chart" width="750" height="200-"></canvas>
+
+  <script src="ecb.js"></script>
+  <link rel="stylesheet" href="ecb.css">
+</body>
+</html>
